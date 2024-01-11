@@ -1,6 +1,6 @@
 //
 //  TranslationService.swift
-//  UkranianToEnglish
+//  EnglishToUkranian
 //
 //  Created by Cory Tripathy on 1/11/24.
 //
