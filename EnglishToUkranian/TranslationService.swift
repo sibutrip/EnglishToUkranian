@@ -7,28 +7,34 @@
 
 import Foundation
 import AVFoundation
+import MLKitTranslate
 
-class TranslationService {
-    let synthesizer = AVSpeechSynthesizer()
+actor TranslationService: ObservableObject {
+    enum TranslationServiceError: Error {
+        case translatorNotLoaded
+    }
+    private var translator: Translator?
+    private let synthesizer = AVSpeechSynthesizer()
     
-    func speak(_ word: String) {
-        let ukraninanWord = translate(word)
-        textToSpeech(ukraninanWord)
+    public func translate(_ word: String) async throws -> String {
+        guard let translator else { throw TranslationServiceError.translatorNotLoaded }
+        return try await translator.translate(word)
     }
     
-    private func translate(_ word: String) -> String {
-        return ""
+    public func speak(_ word: String) async throws {
+        textToSpeech(word)
+        print(word)
     }
     
     private func textToSpeech(_ word: String) {
         // Create an utterance.
-        let utterance = AVSpeechUtterance(string: "hola, como estas")
+        let utterance = AVSpeechUtterance(string: word)
 
 
         // Configure the utterance.
-        utterance.rate = 1
+        utterance.rate = 0.5
         utterance.pitchMultiplier = 1
-        utterance.postUtteranceDelay = 1
+        utterance.postUtteranceDelay = 0.2
         utterance.volume = 1
 
 
@@ -41,7 +47,9 @@ class TranslationService {
         synthesizer.speak(utterance)
     }
     
-    init() {
-        textToSpeech("test")
+    public func assignTranslationModel() async throws {
+        let translationOptions = TranslatorOptions(sourceLanguage: .english, targetLanguage: .ukrainian)
+        translator = Translator.translator(options: translationOptions)
+        try await translator?.downloadModelIfNeeded()
     }
 }

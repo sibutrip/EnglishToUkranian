@@ -7,20 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74AA63D92B50754D007AEFA3 /* TranslatedWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA63D82B50754D007AEFA3 /* TranslatedWord.swift */; };
+		74AA63DB2B50778B007AEFA3 /* DirectoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA63DA2B50778B007AEFA3 /* DirectoryService.swift */; };
+		74AA63DD2B507797007AEFA3 /* Saving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA63DC2B507797007AEFA3 /* Saving.swift */; };
 		74CC55A52B5036760064501A /* UkranianToEnglishApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC55A42B5036760064501A /* UkranianToEnglishApp.swift */; };
 		74CC55A72B5036760064501A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC55A62B5036760064501A /* ContentView.swift */; };
 		74CC55A92B5036780064501A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CC55A82B5036780064501A /* Assets.xcassets */; };
 		74CC55AC2B5036780064501A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CC55AB2B5036780064501A /* Preview Assets.xcassets */; };
 		74CC55B32B5038B30064501A /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC55B22B5038B30064501A /* TranslationService.swift */; };
+		8CFA25C31843284CBAD18F1C /* libPods-EnglishToUkranian.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F13D328B22B5F7513F410559 /* libPods-EnglishToUkranian.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		74CC55A12B5036760064501A /* UkranianToEnglish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UkranianToEnglish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2734BE9FE81FC4750A135CE8 /* Pods-EnglishToUkranian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishToUkranian.release.xcconfig"; path = "Target Support Files/Pods-EnglishToUkranian/Pods-EnglishToUkranian.release.xcconfig"; sourceTree = "<group>"; };
+		4B78F2F4F6ADC5B9A4F656C1 /* Pods-EnglishToUkranian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishToUkranian.debug.xcconfig"; path = "Target Support Files/Pods-EnglishToUkranian/Pods-EnglishToUkranian.debug.xcconfig"; sourceTree = "<group>"; };
+		74AA63D82B50754D007AEFA3 /* TranslatedWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatedWord.swift; sourceTree = "<group>"; };
+		74AA63DA2B50778B007AEFA3 /* DirectoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryService.swift; sourceTree = "<group>"; };
+		74AA63DC2B507797007AEFA3 /* Saving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saving.swift; sourceTree = "<group>"; };
+		74CC55A12B5036760064501A /* EnglishToUkranian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishToUkranian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CC55A42B5036760064501A /* UkranianToEnglishApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UkranianToEnglishApp.swift; sourceTree = "<group>"; };
 		74CC55A62B5036760064501A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		74CC55A82B5036780064501A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74CC55AB2B5036780064501A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		74CC55B22B5038B30064501A /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
+		74CC55B42B5041080064501A /* EnglishToUkranian-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "EnglishToUkranian-Info.plist"; sourceTree = "<group>"; };
+		F13D328B22B5F7513F410559 /* libPods-EnglishToUkranian.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EnglishToUkranian.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CFA25C31843284CBAD18F1C /* libPods-EnglishToUkranian.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,29 +49,35 @@
 		74CC55982B5036760064501A = {
 			isa = PBXGroup;
 			children = (
-				74CC55A32B5036760064501A /* UkranianToEnglish */,
+				74CC55B42B5041080064501A /* EnglishToUkranian-Info.plist */,
+				74CC55A32B5036760064501A /* EnglishToUkranian */,
 				74CC55A22B5036760064501A /* Products */,
+				8C24592282E44CE1CA002F29 /* Pods */,
+				D7740D26AF3DBB06423BB438 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		74CC55A22B5036760064501A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				74CC55A12B5036760064501A /* UkranianToEnglish.app */,
+				74CC55A12B5036760064501A /* EnglishToUkranian.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		74CC55A32B5036760064501A /* UkranianToEnglish */ = {
+		74CC55A32B5036760064501A /* EnglishToUkranian */ = {
 			isa = PBXGroup;
 			children = (
 				74CC55A42B5036760064501A /* UkranianToEnglishApp.swift */,
 				74CC55A62B5036760064501A /* ContentView.swift */,
+				74AA63DA2B50778B007AEFA3 /* DirectoryService.swift */,
+				74AA63D82B50754D007AEFA3 /* TranslatedWord.swift */,
 				74CC55B22B5038B30064501A /* TranslationService.swift */,
+				74AA63DC2B507797007AEFA3 /* Saving.swift */,
 				74CC55A82B5036780064501A /* Assets.xcassets */,
 				74CC55AA2B5036780064501A /* Preview Content */,
 			);
-			path = UkranianToEnglish;
+			path = EnglishToUkranian;
 			sourceTree = "<group>";
 		};
 		74CC55AA2B5036780064501A /* Preview Content */ = {
@@ -70,24 +88,43 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8C24592282E44CE1CA002F29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B78F2F4F6ADC5B9A4F656C1 /* Pods-EnglishToUkranian.debug.xcconfig */,
+				2734BE9FE81FC4750A135CE8 /* Pods-EnglishToUkranian.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D7740D26AF3DBB06423BB438 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F13D328B22B5F7513F410559 /* libPods-EnglishToUkranian.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		74CC55A02B5036760064501A /* UkranianToEnglish */ = {
+		74CC55A02B5036760064501A /* EnglishToUkranian */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74CC55AF2B5036780064501A /* Build configuration list for PBXNativeTarget "UkranianToEnglish" */;
+			buildConfigurationList = 74CC55AF2B5036780064501A /* Build configuration list for PBXNativeTarget "EnglishToUkranian" */;
 			buildPhases = (
+				8F27B7469D86A74B8DE5E788 /* [CP] Check Pods Manifest.lock */,
 				74CC559D2B5036760064501A /* Sources */,
 				74CC559E2B5036760064501A /* Frameworks */,
 				74CC559F2B5036760064501A /* Resources */,
+				DC18F073538AD29D56413D2E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = UkranianToEnglish;
+			name = EnglishToUkranian;
 			productName = UkranianToEnglish;
-			productReference = 74CC55A12B5036760064501A /* UkranianToEnglish.app */;
+			productReference = 74CC55A12B5036760064501A /* EnglishToUkranian.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +142,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 74CC559C2B5036760064501A /* Build configuration list for PBXProject "UkranianToEnglish" */;
+			buildConfigurationList = 74CC559C2B5036760064501A /* Build configuration list for PBXProject "EnglishToUkranian" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +155,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				74CC55A02B5036760064501A /* UkranianToEnglish */,
+				74CC55A02B5036760064501A /* EnglishToUkranian */,
 			);
 		};
 /* End PBXProject section */
@@ -135,13 +172,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8F27B7469D86A74B8DE5E788 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EnglishToUkranian-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC18F073538AD29D56413D2E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EnglishToUkranian/Pods-EnglishToUkranian-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EnglishToUkranian/Pods-EnglishToUkranian-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EnglishToUkranian/Pods-EnglishToUkranian-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		74CC559D2B5036760064501A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				74CC55A72B5036760064501A /* ContentView.swift in Sources */,
+				74AA63D92B50754D007AEFA3 /* TranslatedWord.swift in Sources */,
 				74CC55A52B5036760064501A /* UkranianToEnglishApp.swift in Sources */,
+				74AA63DD2B507797007AEFA3 /* Saving.swift in Sources */,
+				74AA63DB2B50778B007AEFA3 /* DirectoryService.swift in Sources */,
 				74CC55B32B5038B30064501A /* TranslationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,7 +268,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -249,7 +331,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -270,15 +352,17 @@
 		};
 		74CC55B02B5036780064501A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B78F2F4F6ADC5B9A4F656C1 /* Pods-EnglishToUkranian.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UkranianToEnglish/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"EnglishToUkranian/Preview Content\"";
 				DEVELOPMENT_TEAM = 3UR85MK9RT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "EnglishToUkranian-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -289,6 +373,39 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"GTMSessionFetcher\"",
+					"-l\"GoogleDataTransport\"",
+					"-l\"GoogleToolboxForMac\"",
+					"-l\"GoogleUtilities\"",
+					"-l\"GoogleUtilitiesComponents\"",
+					"-l\"PromisesObjC\"",
+					"-l\"Protobuf\"",
+					"-l\"SSZipArchive\"",
+					"-l\"c++\"",
+					"-l\"iconv\"",
+					"-l\"nanopb\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"LocalAuthentication\"",
+					"-framework",
+					"\"MLKitCommon\"",
+					"-framework",
+					"\"MLKitNaturalLanguage\"",
+					"-framework",
+					"\"MLKitTranslate\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.CoryTripathy.UkranianToEnglish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -299,15 +416,17 @@
 		};
 		74CC55B12B5036780064501A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2734BE9FE81FC4750A135CE8 /* Pods-EnglishToUkranian.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UkranianToEnglish/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"EnglishToUkranian/Preview Content\"";
 				DEVELOPMENT_TEAM = 3UR85MK9RT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "EnglishToUkranian-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -318,6 +437,39 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"GTMSessionFetcher\"",
+					"-l\"GoogleDataTransport\"",
+					"-l\"GoogleToolboxForMac\"",
+					"-l\"GoogleUtilities\"",
+					"-l\"GoogleUtilitiesComponents\"",
+					"-l\"PromisesObjC\"",
+					"-l\"Protobuf\"",
+					"-l\"SSZipArchive\"",
+					"-l\"c++\"",
+					"-l\"iconv\"",
+					"-l\"nanopb\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"LocalAuthentication\"",
+					"-framework",
+					"\"MLKitCommon\"",
+					"-framework",
+					"\"MLKitNaturalLanguage\"",
+					"-framework",
+					"\"MLKitTranslate\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.CoryTripathy.UkranianToEnglish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -329,7 +481,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		74CC559C2B5036760064501A /* Build configuration list for PBXProject "UkranianToEnglish" */ = {
+		74CC559C2B5036760064501A /* Build configuration list for PBXProject "EnglishToUkranian" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				74CC55AD2B5036780064501A /* Debug */,
@@ -338,7 +490,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74CC55AF2B5036780064501A /* Build configuration list for PBXNativeTarget "UkranianToEnglish" */ = {
+		74CC55AF2B5036780064501A /* Build configuration list for PBXNativeTarget "EnglishToUkranian" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				74CC55B02B5036780064501A /* Debug */,
