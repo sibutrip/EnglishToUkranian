@@ -11,6 +11,7 @@
 		74CC55A72B5036760064501A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC55A62B5036760064501A /* ContentView.swift */; };
 		74CC55A92B5036780064501A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CC55A82B5036780064501A /* Assets.xcassets */; };
 		74CC55AC2B5036780064501A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CC55AB2B5036780064501A /* Preview Assets.xcassets */; };
+		74CC55B32B5038B30064501A /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC55B22B5038B30064501A /* TranslationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		74CC55A62B5036760064501A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		74CC55A82B5036780064501A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74CC55AB2B5036780064501A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		74CC55B22B5038B30064501A /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				74CC55A42B5036760064501A /* UkranianToEnglishApp.swift */,
 				74CC55A62B5036760064501A /* ContentView.swift */,
+				74CC55B22B5038B30064501A /* TranslationService.swift */,
 				74CC55A82B5036780064501A /* Assets.xcassets */,
 				74CC55AA2B5036780064501A /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				74CC55A72B5036760064501A /* ContentView.swift in Sources */,
 				74CC55A52B5036760064501A /* UkranianToEnglishApp.swift in Sources */,
+				74CC55B32B5038B30064501A /* TranslationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
